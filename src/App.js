@@ -1,8 +1,9 @@
 import React from 'react';
 import TodoAppWrapper from './component/presenter/wrappers/TodoAppWrapper';
 import Header from './component/presenter/wrappers/Header';
-import TodoListWrapper from './component/presenter/wrappers/TodoListWrapper';
 import TodoNav from './component/presenter/wrappers/TodoNav';
+
+import Path from './routes/routes';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <TodoAppWrapper>
         <TodoNav />
-        <TodoListWrapper />
+        <Path />
       </TodoAppWrapper>
     </>
   );
