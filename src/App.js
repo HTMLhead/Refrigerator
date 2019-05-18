@@ -1,8 +1,8 @@
 import React from 'react';
-import TodoAppWrapper from './component/presenter/TodoAppWrapper';
-import Header from './component/presenter/Header';
-import TodoListWrapper from './component/presenter/TodoListWrapper';
-import TodoNavWrapper from './component/presenter/TodoNavWrapper';
+import TodoAppWrapper from './component/presenter/wrappers/TodoAppWrapper';
+import Header from './component/presenter/wrappers/Header';
+import TodoListWrapper from './component/presenter/wrappers/TodoListWrapper';
+import TodoNavWrapper from './component/presenter/wrappers/TodoNavWrapper';
 
 function App() {
   return (
