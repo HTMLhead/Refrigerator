@@ -1,8 +1,11 @@
+import React from 'react';
 import styled from 'styled-components';
+import HeaderLabel from '../labels/HeaderLabel';
 
-const Header = styled.div`
+const HeaderContainer = styled.div`
+  justify-content: center;
   position: relative;
-  display: block;
+  display: flex;
   width: 100%;
   height: 10vh;
   background-color: #272727;
@@ -15,5 +18,13 @@ const Header = styled.div`
     box-shadow: 0px 5px 5px #000;
   }
 `;
+
+const Header = () => {
+  return (
+    <HeaderContainer>
+      <HeaderLabel>Head Todo</HeaderLabel>
+    </HeaderContainer>
+  );
+};
 
 export default Header;
