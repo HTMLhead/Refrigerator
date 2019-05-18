@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const TodoAppWrapper = styled.div`
+  display: flex;
   width: 100%;
   padding-right: 10%;
   padding-left: 10%;
