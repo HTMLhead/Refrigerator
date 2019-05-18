@@ -13,7 +13,8 @@ const DoneIcon = styled.div`
     left: 50%;
     transform: translate(-50%,-50%) rotate(45deg);
     border-radius: 3px;
-    padding: 20%;
+    padding-right: 24%;
+    padding-bottom: 48%
     border-bottom: 0.3rem solid #fff;
     border-right: 0.3rem solid #fff
   }
