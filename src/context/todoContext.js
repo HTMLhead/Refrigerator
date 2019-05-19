@@ -1,6 +1,6 @@
 import React, { useReducer, useEffect } from 'react';
 import fetchData from '../util/fetchData';
-import { todoReducer, initData } from './todoReducer';
+import { todoReducer, initData, addData } from './todoReducer';
 
 const TodoContext = React.createContext();
 
@@ -21,14 +21,24 @@ const TodoProvider = ({ children }) => {
     dispatch(initData(tasks.tasks));
   };
 
+  const addTask = (e, taskState) => {
+    const taskObj = {
+      description: taskState.description,
+      priority: taskState.priority,
+      state: taskState.status,
+      timelimit: taskState.timelimit,
+      title: taskState.title,
+    };
+    dispatch(addData(taskObj));
+  };
+
   useEffect(() => {
     fetchTask();
   }, []);
   return (
-    <TodoContext.Provider value={{ state, dispatch, fetchTask }}>
+    <TodoContext.Provider value={{ state, dispatch, fetchTask, addTask }}>
       {children}
     </TodoContext.Provider>
   );
 };
-// title, description, state, limitdate, priority
 export { TodoProvider, TodoContext };
