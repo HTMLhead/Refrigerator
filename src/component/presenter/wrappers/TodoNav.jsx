@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import NavBtn from '../buttons/NavBtn';
 import DoingIcon from '../icons/DoingIcon';
@@ -22,11 +23,11 @@ const NavBtnContent = styled.span`
 const TodoNav = () => {
   return (
     <TodoNavWrapper>
-      <NavBtn>
+      <NavBtn as={Link} to="/todo">
         <DoingIcon />
         <NavBtnContent>할 일</NavBtnContent>
       </NavBtn>
-      <NavBtn>
+      <NavBtn as={Link} to="/done">
         <DoneIcon />
         <NavBtnContent>한 일</NavBtnContent>
       </NavBtn>

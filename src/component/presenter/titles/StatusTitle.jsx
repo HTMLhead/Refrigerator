@@ -5,7 +5,7 @@ const StatusTitle = styled.div`
   width: 20%;
   margin: 5%;
   padding: 3%;
-  border: 0.2rem solid #fff;
+  border-bottom: 0.2rem solid #fff;
   font-size: 2rem;
   text-align: center;
 `;
