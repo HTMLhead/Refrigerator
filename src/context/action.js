@@ -1,7 +1,0 @@
-// todo context
-const INIT_DATA = 'INIT_DATA';
-const ADD_DATA = 'ADD_DATA';
-const UPDATE_DATA = 'UPDATE_DATA';
-const HANDLE_PAGE = 'HANDLE_PAGE';
-
-export { INIT_DATA, ADD_DATA, UPDATE_DATA, HANDLE_PAGE };
